@@ -1,0 +1,49 @@
+/*horizontal list*/
+.horizontal-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 20px 0;
+}
+.horizontal-list .item {
+  white-space: normal;
+  display: inline-block;
+  max-width: 350px;
+  width: 80%;
+  height: 100%;
+  margin: 0 15px 0 0 ;
+}
+.horizontal-list .small-item {
+  white-space: normal;
+  display: inline-block;
+  max-width: 200px;
+  width: 80%;
+  height: 100%;
+  margin: 0 15px 0 0 ;
+}
+
+/*aspect ratio*/
+.aspect-ratio-1-1 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.aspect-ratio-5-4 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+}
+.aspect-ratio-5-8 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 8;
+  object-fit: cover;
+}
+.aspect-ratio-5-7 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+}
