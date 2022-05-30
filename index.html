@@ -29,24 +29,33 @@
           <div class="col-12 col-lg-10 offset-lg-1">
             <h2 class='font-en text-primary'>Event List</h2>
             <div class="mt-3">
-              <aside class='py-2'>
-                <a href='#'>
-                  <p>2022.02.14</p>
-                  <p>書道教室無料体験！</p>
-                </a>
-              </aside>
-              <aside class='py-2'>
-                <a href='#'>
-                  <p>2022.02.14</p>
-                  <p>書道教室無料体験！</p>
-                </a>
-              </aside>
-              <aside class='py-2'>
-                <a href='#'>
-                  <p>2022.02.14</p>
-                  <p>書道教室無料体験！</p>
-                </a>
-              </aside>
+              <script>
+                data = [
+                {
+                  title: `書道教室無料体験！`,
+                  date: `2022.02.14`,
+                  path: `#`,
+                },
+                {
+                  title: `書道教室無料体験！`,
+                  date: `2022.02.14`,
+                  path: `#`,
+                },
+                {
+                  title: `書道教室無料体験！`,
+                  date: `2022.02.14`,
+                  path: `#`,
+                },
+                ];
+                for(i=0 ; i<data.length ; i++) {
+                  document.write(`<aside class='py-2'>`);
+                  document.write(`<a href='${data[i].path}'>`);
+                  document.write(`<p>${data[i].date}</p>`);
+                  document.write(`<p>${data[i].title}</p>`);
+                  document.write(`</a>`);
+                  document.write(`</aside>`);
+                }
+              </script>
             </div>
           </div>
         </div>
@@ -59,27 +68,37 @@
             <h2 class='font-en text-primary'>Environment</h2>
             <div class="mt-3 container-fluid p-0">
               <div class="row">
-                <aside class='col-12 col-lg-4 py-4 p-lg-4'>
-                  <img src="assets/images/01@3x.png">
-                  <div class="p-line pt-2 ps-5">
+                <script>
+                  data = [
+                  {
+                    image_path: `assets/images/demo_dark_ractangle.svg`,
+                    content: `
                     クリエイターのための空間。
                     開放的で清潔な空間。
-                  </div>
-                </aside>
-                <aside class='col-12 col-lg-4 py-4 p-lg-4'>
-                  <img src="assets/images/02@3x.png">
-                  <div class="p-line pt-2 ps-5">
+                    `
+                  },
+                  {
+                    image_path: `assets/images/demo_dark_ractangle.svg`,
+                    content: `
                     交流の場として。
                     テーブルを囲うように会話を楽しもう。
-                  </div>
-                </aside>
-                <aside class='col-12 col-lg-4 py-4 p-lg-4'>
-                  <img src="assets/images/03@3x.png">
-                  <div class="p-line pt-2 ps-5">
+                    `
+                  },
+                  {
+                    image_path: `assets/images/demo_dark_ractangle.svg`,
+                    content: `
                     お子様のための安全なスペース。
                     ご友人ともお子様とも楽しく過ごす。
-                  </div>
-                </aside>
+                    `
+                  },
+                  ];
+                  for(i=0 ; i<data.length ; i++) {
+                    document.write(`<aside class='col-12 col-lg-4 py-4 p-lg-4'>`);
+                    document.write(`<img src="${data[i].image_path}">`);
+                    document.write(`<div class="p-line pt-2 ps-5">${data[i].content}</div>`);
+                    document.write(`</aside>`);
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -139,32 +158,39 @@
             <div class="mt-5">
               <h5>Inside</h5>
               <div class="mt-3 horizontal-list">
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/inside_01.jpg">
-                </div>
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/inside_02.jpg">
-                </div>
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/inside_03.jpg">
-                </div>
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/inside_04.jpg">
-                </div>
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/inside_05.jpg">
-                </div>
+                <script>
+                  data = [
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  ];
+                  for(i=0 ; i<data.length ; i++) {
+                    document.write(`<div class="item">`);
+                    document.write(`<img class='rounded shadow-sm aspect-ratio-5-8' src="${data[i].image_path}">`);
+                    document.write(`</div>`);
+                  }
+                </script>
               </div>
             </div>
             <div class="mt-5">
               <h5>Outside</h5>
               <div class="mt-3 horizontal-list">
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/outside_01.jpg">
-                </div>
-                <div class="item">
-                  <img class='rounded shadow-sm aspect-ratio-5-8' src="assets/images/outside_02.jpg">
-                </div>
+                <script>
+                  data = [
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  {image_path: `assets/images/demo_dark_ractangle.svg`},
+                  ];
+                  for(i=0 ; i<data.length ; i++) {
+                    document.write(`<div class="item">`);
+                    document.write(`<img class='rounded shadow-sm aspect-ratio-5-8' src="${data[i].image_path}">`);
+                    document.write(`</div>`);
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -177,121 +203,130 @@
               <div>
                 <h2 class='font-en text-primary'>Drink</h2>
                 <div class="mt-4 horizontal-list">
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/drink_01.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/drink_02.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>ブラック</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/drink_03.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>カフェラテ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/drink_04.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>カフェモカ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/drink_05.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>抹茶ラテ</p>
-                    </div>
-                  </div>
+                  <script>
+                    data = [
+                    {
+                      price: `500`,
+                      title: `エスプレッソ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `ブラック`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェモカ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `抹茶ラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    ];
+                    for(i=0 ; i<data.length ; i++) {
+                      document.write(`<div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">`);
+                      document.write(`<img class='aspect-ratio-5-7' src="${data[i].image_path}">`);
+                      document.write(`<div class='p-3 text-muted'>`);
+                      document.write(`<h5 class='font-en'>¥${data[i].price}</h5>`);
+                      document.write(`<p>${data[i].title}</p>`);
+                      document.write(`</div>`);
+                      document.write(`</div>`);
+                    }
+                  </script>
                 </div>
               </div>
               <div class='mt-5 pt-5'>
                 <h2 class='font-en text-primary'>Pancake</h2>
                 <div class="mt-4 horizontal-list">
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/pancake_01.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/pancake_02.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/pancake_03.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/pancake_04.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/pancake_05.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
+                  <script>
+                    data = [
+                    {
+                      price: `500`,
+                      title: `エスプレッソ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `ブラック`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェモカ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `抹茶ラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    ];
+                    for(i=0 ; i<data.length ; i++) {
+                      document.write(`<div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">`);
+                      document.write(`<img class='aspect-ratio-5-7' src="${data[i].image_path}">`);
+                      document.write(`<div class='p-3 text-muted'>`);
+                      document.write(`<h5 class='font-en'>¥${data[i].price}</h5>`);
+                      document.write(`<p>${data[i].title}</p>`);
+                      document.write(`</div>`);
+                      document.write(`</div>`);
+                    }
+                  </script>
                 </div>
               </div>
               <div class='mt-5 pt-5'>
                 <h2 class='font-en text-primary'>Cake</h2>
                 <div class="mt-4 horizontal-list">
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/cake_01.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/cake_02.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/cake_03.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/cake_04.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
-                  <div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">
-                    <img class='aspect-ratio-5-7' src="assets/images/cake_05.jpg">
-                    <div class='p-3 text-muted'>
-                      <h5 class='font-en'>¥500</h5>
-                      <p>エスプレッソ</p>
-                    </div>
-                  </div>
+                  <script>
+                    data = [
+                    {
+                      price: `500`,
+                      title: `エスプレッソ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `ブラック`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `カフェモカ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    {
+                      price: `500`,
+                      title: `抹茶ラテ`,
+                      image_path: `assets/images/demo_dark_ractangle.svg`,
+                    },
+                    ];
+                    for(i=0 ; i<data.length ; i++) {
+                      document.write(`<div class="small-item shadow-sm bg-white text-dark rounded overflow-hidden">`);
+                      document.write(`<img class='aspect-ratio-5-7' src="${data[i].image_path}">`);
+                      document.write(`<div class='p-3 text-muted'>`);
+                      document.write(`<h5 class='font-en'>¥${data[i].price}</h5>`);
+                      document.write(`<p>${data[i].title}</p>`);
+                      document.write(`</div>`);
+                      document.write(`</div>`);
+                    }
+                  </script>
                 </div>
               </div>
             </div>
